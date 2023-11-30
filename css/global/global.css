@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+  background-color: var(--cor-bg);
+  color: var(--cor-01);
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+span {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

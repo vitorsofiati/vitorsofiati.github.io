@@ -1,0 +1,45 @@
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  gap: 32px;
+}
+
+.header ul a {
+  display: inline-block;
+  position: relative;
+}
+
+.header ul a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 0;
+  background-color: var(--cor-01);
+}
+
+.header ul a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.linguagens {
+  margin: 20px 20px 0 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.linguagens a {
+  padding: 5px 10px;
+}

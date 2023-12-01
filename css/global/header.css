@@ -1,7 +1,15 @@
+.linguagens {
+  margin: 20px 20px 0 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.linguagens a {
+  padding: 5px 10px;
+}
+
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
   display: flex;
   position: relative;
   justify-content: space-between;
@@ -15,12 +23,12 @@
   gap: 32px;
 }
 
-.header ul a {
-  display: inline-block;
-  position: relative;
+.header li {
+  padding: 4px 10px;
+  border-radius: 4px;
 }
 
-.header ul a::after {
+.header li::after {
   content: "";
   display: block;
   height: 4px;
@@ -28,18 +36,52 @@
   background-color: var(--cor-01);
 }
 
-.header ul a:hover::after {
+.header li:hover::after {
   width: 100%;
   transition: 0.3s;
 }
 
-.linguagens {
-  margin: 20px 20px 0 0;
-  display: flex;
-  justify-content: end;
-  gap: 10px;
+@media(max-width:800px) {
+  .header .logotipo {
+    width: 350px;
+  }
+
+  .header ul {
+    gap: 10px;
+    font-size: 1.75rem;
+  }
 }
 
-.linguagens a {
-  padding: 5px 10px;
+@media(max-width:600px) {
+
+  .linguagens {
+    margin: 20px;
+  }
+
+  .linguagens a {
+    padding: 5px;
+  }
+
+  .header {
+    display: grid;
+    justify-content: center;
+  }
+
+  .header ul {
+    margin-top: 10px;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .header li {
+    background-color: var(--cor-02);
+  }
+
+  .header li:hover {
+    background-color: var(--cor-03);
+  }
+
+  .header li:hover::after {
+    width: 0;
+  }
 }

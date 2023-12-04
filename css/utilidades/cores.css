@@ -2,16 +2,16 @@
 
 :root {
   --cor-bg: #111;
-  --cor-01: #eee;
-  --cor-02: #333;
-  --cor-03: #666;
+  --cor-texto: #eee;
+  --cor-01: #555;
+  --cor-02: #888;
 }
 
 /* @media (prefers-color-scheme:light) {
   :root {
     --cor-bg: #eee;
-    --cor-01: #111;
-    --cor-02: #fff;
-    --cor-03: #ddd;
+    --cor-texto: #111;
+    --cor-01: #fff;
+    --cor-02: #ddd;
   }
 } */

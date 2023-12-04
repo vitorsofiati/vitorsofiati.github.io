@@ -33,7 +33,7 @@
   display: block;
   height: 4px;
   width: 0;
-  background-color: var(--cor-01);
+  background-color: var(--cor-texto);
 }
 
 .header li:hover::after {
@@ -48,14 +48,14 @@
 
   .header ul {
     gap: 10px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media(max-width:600px) {
 
   .linguagens {
-    margin: 20px;
+    margin: 10px;
   }
 
   .linguagens a {
@@ -67,18 +67,23 @@
     justify-content: center;
   }
 
+  .header .logotipo {
+    display: none;
+  }
+
   .header ul {
-    margin-top: 10px;
-    gap: 16px;
+    margin-top: 60px;
+    gap: 30px;
     justify-content: center;
+    padding: 0 10px;
   }
 
   .header li {
-    background-color: var(--cor-02);
+    background-color: var(--cor-01);
   }
 
   .header li:hover {
-    background-color: var(--cor-03);
+    background-color: var(--cor-02);
   }
 
   .header li:hover::after {

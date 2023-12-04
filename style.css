@@ -1,9 +1,10 @@
 /* global */
 @import "./css/global/global.css";
-@import "./css/global/header.css";
 
 /* conteúdos */
+@import "./css/home/header.css";
 @import "./css/home/introducao.css";
+@import "./css/home/formacao.css";
 
 
 

@@ -33,7 +33,7 @@
   display: block;
   height: 4px;
   width: 0;
-  background-color: var(--cor-texto);
+  background-color: var(--cor-secundaria);
 }
 
 .header li:hover::after {

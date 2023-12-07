@@ -4,8 +4,8 @@ html {
 
 body {
   margin: 0px;
-  background-color: var(--cor-bg);
-  color: var(--cor-texto);
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
   font-size: 1.4rem;
   line-height: 1.25;
 }
@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px 40px;
 }

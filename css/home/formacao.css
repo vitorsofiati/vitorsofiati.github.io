@@ -1,3 +1,144 @@
 .formacao {
-  margin-top: 100px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 500px;
+}
+
+.formacao-subtitulo {
+  word-break: break-all;
+  max-width: 1ch;
+  font-size: 6rem;
+  line-height: 1;
+  color: var(--cor-02);
+}
+
+.formacao-info {
+  grid-column: 2/4;
+  align-self: center;
+}
+
+.graduacao-lista {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.graduacao {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  max-width: 250px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  position: relative;
+}
+
+.graduacao::before {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 6px;
+  border-radius: 1px;
+  background-color: #fff824;
+  position: absolute;
+  left: -4px;
+  top: 52px;
+}
+
+.graduacao h3 {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  text-wrap: wrap;
+  flex: 1;
+}
+
+.graduacao span {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.formacao-extra {
+  margin-top: 80px;
+}
+
+.formacao-extra h3,
+.formacao-idiomas h3 {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  display: block;
+  content: "";
+  background: url("../../img/icones/cursos.svg");
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 2px;
+}
+
+.cursos-lista,
+.idiomas-lista {
+  margin: 20px 100px 0 30px;
+}
+
+.cursos-lista li {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-02);
+  position: relative;
+}
+
+.cursos-lista a {
+  display: block;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background: url("../../img/icones/certificado.svg");
+  background-size: contain;
+  position: absolute;
+  right: -40px;
+  top: 2px;
+
+}
+
+.formacao-idiomas {
+  margin-top: 40px;
+}
+
+.formacao-idiomas h3 {
+  position: relative;
+}
+
+.formacao-idiomas h3::before {
+  display: block;
+  content: "";
+  background: url("../../img/icones/linguagem.svg");
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  position: absolute;
+  left: -60px;
+  top: -4px;
+}
+
+.idiomas-lista li {
+  margin-bottom: 10px;
+}
+
+.idiomas-lista span {
+  color: var(--cor-02);
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }

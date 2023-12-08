@@ -1,0 +1,11 @@
+.botao {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.botao:hover {
+  background-color: var(--cor-02);
+  color: var(--cor-secundaria);
+}

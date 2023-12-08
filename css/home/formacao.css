@@ -2,7 +2,6 @@
   margin-top: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 500px;
 }
 
 .formacao-subtitulo {
@@ -204,7 +203,7 @@
   }
 
   .graduacao-lista {
-    margin-top: 40px;
+    margin-top: 60px;
     flex-direction: column;
   }
 
@@ -213,11 +212,19 @@
     max-width: 500px;
   }
 
-  .graduacao::before,
-  .formacao-extra h3::before,
-  .formacao-idiomas h3::before {
-    display: none;
+  .graduacao::before {
+    top: 40px;
   }
+
+  .formacao-extra {
+    margin-top: 80px;
+  }
+
+  .formacao-extra,
+  .formacao-idiomas {
+    margin-left: 40px;
+  }
+
 
   .cursos-lista,
   .idiomas-lista {

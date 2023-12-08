@@ -41,6 +41,7 @@
 }
 
 .sobre {
+  padding-top: 40px;
   padding-bottom: 60px;
   color: var(--cor-primaria);
   text-indent: 40px;
@@ -54,6 +55,7 @@
 @media(max-width:800px) {
 
   .introducao {
+    margin-top: 50px;
     gap: 0;
     grid-template-columns: 1fr 1fr;
   }
@@ -78,13 +80,20 @@
 }
 
 @media(max-width:600px) {
+  .introducao-bg {
+    box-shadow: none;
+  }
+
   .introducao {
-    margin-top: 100px;
     grid-template-columns: 1fr;
   }
 
   .foto-perfil {
     display: none;
+  }
+
+  .apresentacao {
+    margin: 0;
   }
 
   .apresentacao h1 {
@@ -96,5 +105,7 @@
   .apresentacao p {
     margin-top: 20px;
     max-width: max-content;
+    font-size: 2rem;
+    text-align: center;
   }
 }

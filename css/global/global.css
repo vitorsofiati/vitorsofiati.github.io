@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0px;
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
   font-size: 1.4rem;

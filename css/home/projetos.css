@@ -96,14 +96,24 @@
   }
 
   .portfolio {
+    padding: 0;
     grid-template-columns: 1fr;
     gap: 20px;
     place-items: center;
   }
 
   .portfolio-texto {
-    /* padding: 0 0px; */
-    gap: 0;
+    gap: 8px;
   }
 
+}
+
+@media(max-width:600px) {
+  .projetos-subtitulo {
+    padding: 40px 0;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+
+  }
 }

@@ -231,3 +231,15 @@
     margin: 10px auto 0 30px;
   }
 }
+
+@media(max-width:400px) {
+  .formacao-extra h3::before {
+    top: 14px;
+    left: -45px;
+  }
+
+  .formacao-idiomas h3::before {
+    top: -8px;
+    left: -50px;
+  }
+}

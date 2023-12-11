@@ -90,3 +90,10 @@
     width: 0;
   }
 }
+
+@media(max-width:400px) {
+  .header ul {
+    margin-top: 20px;
+    gap: 10px;
+  }
+}

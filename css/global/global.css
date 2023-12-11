@@ -46,3 +46,9 @@ img {
   margin: 0 auto;
   padding: 10px 40px;
 }
+
+@media(max-width: 400px) {
+  .container {
+    padding: 10px 20px;
+  }
+}

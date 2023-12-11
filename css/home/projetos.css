@@ -110,10 +110,25 @@
 
 @media(max-width:600px) {
   .projetos-subtitulo {
-    padding: 40px 0;
+    padding: 20px 0;
     font-size: 3rem;
     width: 100%;
+    border-radius: 0;
     text-align: center;
 
+  }
+}
+
+@media(max-width:400px) {
+  .projetos-bg {
+    margin: 40px auto 20px auto;
+  }
+
+  .projetos-subtitulo {
+    letter-spacing: 0.4rem;
+  }
+
+  .portfolio-texto {
+    gap: 4px;
   }
 }

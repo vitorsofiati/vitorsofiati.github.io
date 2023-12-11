@@ -1,4 +1,5 @@
 .botao {
+  display: block;
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
   padding: 4px 10px;

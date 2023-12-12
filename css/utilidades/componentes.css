@@ -4,9 +4,11 @@
   color: var(--cor-primaria);
   padding: 4px 10px;
   border-radius: 4px;
+  border: 1px solid var(--cor-d1);
 }
 
 .botao:hover {
-  background-color: var(--cor-02);
+  background-color: var(--cor-d1);
   color: var(--cor-secundaria);
+  border-color: #fff;
 }

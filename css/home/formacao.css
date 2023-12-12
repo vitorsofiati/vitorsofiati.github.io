@@ -9,8 +9,9 @@
   word-break: break-all;
   max-width: 1ch;
   font-size: 6rem;
-  line-height: 1;
-  color: var(--cor-02);
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--cor-01);
 }
 
 .formacao-info {
@@ -38,6 +39,7 @@
   flex: 1;
   gap: 20px;
   position: relative;
+  border: 1px solid var(--cor-d1);
 }
 
 .graduacao::before {
@@ -46,7 +48,7 @@
   height: 40px;
   width: 6px;
   border-radius: 1px;
-  background-color: #fff824;
+  background-color: var(--cor-d1);
   position: absolute;
   left: -4px;
   top: 52px;

@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;1,400;1,500&family=Changa:wght@400;500&family=DM+Mono:wght@400;500&family=JetBrains+Mono:wght@500;800&family=Lato:wght@900&family=Neuton:wght@400;700&family=Nova+Square&family=Oswald:wght@300;400&family=Roboto:wght@900&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+
   <title>Vitor Sofiati</title>
 </head>
 
-<body>
+<body class="texto-padrao">
 
 
   <header>
@@ -19,9 +24,9 @@
     </div>
 
     <div class="header container">
-      <a href="./"><img class="logotipo" src="./img/logotipo.svg" alt="Logotipo temporario"></a>
+      <a href="./"><img class="logotipo" src="./img/vs.svg" alt="Logotipo temporario"></a>
       <nav aria-label="primaria">
-        <ul>
+        <ul class="teste10">
           <li> <a href="#formacao">Formação</a> </li>
           <li> <a href="#projetos">Projetos</a> </li>
           <li> <a href="#contato">Contato</a> </li>
@@ -39,26 +44,26 @@
       </div>
 
       <div class="apresentacao">
-        <h1>Vitor Sofiati</h1>
-        <p>Estudante de desenvolvimento web, escrevendo um texto provisório aqui que será mudado depois.</p>
+        <h1 class="titulo">Vitor Sofiati</h1>
+        <p class="teste10">Estudante de desenvolvimento web, escrevendo um texto provisório aqui que será mudado depois.</p>
       </div>
 
     </main>
   </div>
 
   <div class="sobre-bg">
-    <article class="sobre container" id="sobre">
+    <article class="sobre container teste10" id="sobre">
       Muito prazer, sou o Vitor! Aqui vou fazer uma breve introdução, falar sobre minha formação como técnico em eletrônica e a graduação em ADS, sobre meu trabalho atual em um hospital e a jornada rumo à area de desenvolvimento. Para informações profissionais completas, vou linkar meu <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank"><em>Linkedin</em></a> aqui nesse texto. Mais baixo estão os projetos que estou fazendo pra estudar.
     </article>
   </div>
 
   <section class="formacao container" id="formacao">
-    <h2 class="formacao-subtitulo">FORMAÇÃO</h2>
+    <h2 class="formacao-subtitulo titulo">FORMAÇÃO</h2>
 
     <div class="formacao-info">
 
       <p>Aqui estão minhas principais formações, cursos e certificados relacionados à area.</p>
-      <ul class="graduacao-lista">
+      <ul class="graduacao-lista texto-cards">
         <li class="graduacao">
           <span>Tecnólogo</span>
           <h3>Análise e Desenvolvimento de Sistemas</h3>
@@ -74,7 +79,7 @@
       <div class="formacao-extra">
 
         <h3 class=""> Certificações complementares</h3>
-        <ul class="cursos-lista">
+        <ul class="cursos-lista texto-listas">
           <li>HTML e CSS para Iniciantes | Origamid
             <span>46h</span>
             <a href="https://www.origamid.com/certificate/f8e086ce" target="_blank"></a>
@@ -89,7 +94,7 @@
 
       <div class="formacao-idiomas">
         <h3>IDIOMAS</h3>
-        <ul class="idiomas-lista">
+        <ul class="idiomas-lista texto-listas">
           <li>Inglês<span> / avançado</span></li>
           <li>Espanhol<span> / iniciante</span></li>
         </ul>
@@ -101,26 +106,26 @@
 
   <section class="projetos-bg" id="projetos">
 
-    <h2 class="projetos-subtitulo">PROJETOS</h2>
+    <h2 class="projetos-subtitulo titulo">PROJETOS</h2>
     <div class="projetos container">
       <p class="projetos-intro">Além de ajudar a fixar bem o conteúdo que estou aprendendo, realizar projetos é uma forma de conseguir uma experiência e me preparar melhor para o mercado :) . Para informações mais completas, código e etc, pode acessar meu perfil no <a href="https://github.com/vitorsofiati?tab=repositories" target="_blank"><em>Github</em></a>. </p>
 
       <div class="projetos-grid">
 
         <div class="portfolio">
-          <h3>Bikcraft</h3>
+          <h3 class="texto-cards">Bikcraft</h3>
           <img src="./img/projetos/bikcraft/bikcraft01-240p.jpg" alt="Site de venda de bicicletas">
           <div class="portfolio-texto">
-            <p>Projeto final do curso <em>HTML e CSS para iniciantes</em>, da Origamid. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <p class="texto-listas">Projeto final do curso <em>HTML e CSS para iniciantes</em>, da Origamid. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
             <a class="botao" href="https://github.com/vitorsofiati/bikcraft" target="_blank">Veja Mais</a>
           </div>
         </div>
 
         <div class="portfolio">
-          <h3>Tabela de Classificação</h3>
+          <h3 class="texto-cards">Tabela de Classificação</h3>
           <img src="./img/projetos/alura/alura01-240p.jpg" alt="Site de venda de bicicletas">
           <div class="portfolio-texto">
-            <p>Projeto final da <em>7º Imersão Dev</em>, da Alura. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <p class="texto-listas">Projeto final da <em>7º Imersão Dev</em>, da Alura. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
             <!-- página mostrando cada projeto? -->
             <a class="botao" href="https://github.com/vitorsofiati/imersao-alura" target="_blank">Veja Mais</a>
           </div>
@@ -132,9 +137,9 @@
   </section>
 
   <footer class="footer-bg">
-    <div class="footer container">
+    <div class="footer container" id="contato">
 
-      <a class="logotipo" href="./"><img src="./img/logotipo.svg" alt="Logotipo temporario"></a>
+      <a class="logotipo" href="./"><img src="./img/vs.svg" alt="Logotipo temporario"></a>
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank">

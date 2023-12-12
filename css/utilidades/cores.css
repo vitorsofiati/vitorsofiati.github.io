@@ -1,10 +1,11 @@
 /* cores temporarias, mudar depois */
 
 :root {
-  --cor-primaria: #111;
+  --cor-primaria: #090909;
   --cor-secundaria: #eee;
   --cor-01: #555;
   --cor-02: #888;
+  --cor-d1: #8758ff
 }
 
 /* @media (prefers-color-scheme:light) {

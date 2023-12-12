@@ -1,5 +1,6 @@
 .footer-bg {
-  background-color: #000;
+  background-color: #040404;
+  border-top: 1px solid var(--cor-d1);
 }
 
 .footer {
@@ -11,7 +12,7 @@
 }
 
 .footer .logotipo {
-  max-width: 300px;
+  max-width: 150px;
 }
 
 .footer ul {

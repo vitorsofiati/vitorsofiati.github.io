@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página pessoal de desenvolvedor. Informações profissionais, portfolio e contatos.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +14,10 @@
   <title>Vitor Sofiati</title>
 </head>
 
-<body class="fonte-padrao">
+<body class="fonte-padrao" id="inicio">
 
 
-  <header>
+  <header class="header-bg">
 
     <div class="linguagens">
       <a href="./"><img src="./img/icones/brasil-icone.png" width="40" height="28" alt="Bandeira do Brasil"></a>
@@ -24,9 +25,9 @@
     </div>
 
     <div class="header container">
-      <a href="./"><img class="logotipo" src="./img/vs.svg" width="100" height="75" alt="Logotipo temporario"></a>
+      <a href="#inicio"><img class="logotipo" src="./img/vs.svg" width="100" height="75" alt="Logotipo temporario"></a>
       <nav aria-label="principal">
-        <ul class="teste10">
+        <ul>
           <li> <a href="#formacao">Formação</a> </li>
           <li> <a href="#projetos">Projetos</a> </li>
           <li> <a href="#contato">Contato</a> </li>
@@ -45,7 +46,7 @@
 
       <div class="apresentacao">
         <h1 class="fonte-titulo">Vitor Sofiati</h1>
-        <p class="teste10">Estudante de desenvolvimento com conhecimentos em <em><abbr title="HyperText Markup Language">HTML</abbr></em>, <em><abbr title="Cascading Style Sheets">CSS</abbr></em> e <em>JavaScript.</em></p>
+        <p>Estudante de desenvolvimento com conhecimentos em <em><abbr title="HyperText Markup Language">HTML</abbr></em>, <em><abbr title="Cascading Style Sheets">CSS</abbr></em> e <em>JavaScript.</em></p>
       </div>
 
     </main>
@@ -63,11 +64,11 @@
     <div class="formacao-info">
 
       <p>Aqui estão minhas principais formações, cursos e certificados relacionados à area.</p>
-      <ul class="graduacao-lista texto-cards">
+      <ul class="graduacao-lista fonte-card">
         <li class="graduacao">
           <span>Tecnólogo</span>
           <h3>Análise e Desenvolvimento de Sistemas</h3>
-          <span>Universidade Estácio de Sá.</span>
+          <span>Universidade Estácio de Sá</span>
         </li>
         <li class="graduacao">
           <span>Técnico</span>
@@ -79,7 +80,7 @@
       <div class="formacao-extra">
 
         <h3 class=""> Certificações complementares</h3>
-        <ul class="cursos-lista texto-listas">
+        <ul class="cursos-lista fonte-lista">
           <li>HTML e CSS para Iniciantes | Origamid
             <span>46h</span>
             <a href="https://www.origamid.com/certificate/f8e086ce" target="_blank" aria-label="Certificado do curso"></a>
@@ -94,7 +95,7 @@
 
       <div class="formacao-idiomas">
         <h3>IDIOMAS</h3>
-        <ul class="idiomas-lista texto-listas">
+        <ul class="idiomas-lista fonte-lista">
           <li>Inglês<span> / avançado</span></li>
           <li>Espanhol<span> / iniciante</span></li>
         </ul>
@@ -113,21 +114,22 @@
       <div class="projetos-grid">
 
         <div class="portfolio">
-          <h3 class="texto-cards">Bikcraft</h3>
+          <h3 class="fonte-card">Bikcraft</h3>
           <img src="./img/projetos/bikcraft/bikcraft01-240p.jpg" width="320" height="240" alt="Site de venda de bicicletas">
           <div class="portfolio-texto">
-            <p class="texto-listas">Projeto final do curso <em>HTML e CSS para iniciantes</em>, da Origamid. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <p class="fonte-lista">Projeto final do curso <em>HTML e CSS para iniciantes</em>, da Origamid. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
             <a class="botao" href="https://github.com/vitorsofiati/bikcraft" target="_blank">Veja Mais</a>
           </div>
         </div>
 
         <div class="portfolio">
-          <h3 class="texto-cards">Tabela de Classificação</h3>
+          <h3 class="fonte-card">Tabela de Classificação</h3>
           <img src="./img/projetos/alura/alura01-240p.jpg" width="320" height="240" alt="Site de venda de bicicletas">
           <div class="portfolio-texto">
-            <p class="texto-listas">Projeto final da <em>7º Imersão Dev</em>, da Alura. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <p class="fonte-lista">Projeto final da <em>7º Imersão Dev</em>, da Alura. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
             <!-- página mostrando cada projeto? -->
-            <a class="botao" href="https://github.com/vitorsofiati/imersao-alura" target="_blank">Veja Mais</a>
+            <a class="botao" href="https://github.com/vitorsofiati/imersao-alura" target="_blank">
+              Veja Mais</a>
           </div>
         </div>
 
@@ -139,7 +141,7 @@
   <footer class="footer-bg">
     <div class="footer container" id="contato">
 
-      <a class="logotipo" href="./"><img src="./img/vs.svg" width="100" height="75" alt="Logotipo temporario"></a>
+      <!-- <a class="logotipo" href="./"><img src="./img/vs.svg" width="100" height="75" alt="Logotipo temporario"></a> -->
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank" aria-label="Perfil do Linkedin">

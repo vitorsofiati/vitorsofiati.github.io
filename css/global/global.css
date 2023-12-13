@@ -13,6 +13,7 @@ body {
   color: var(--cor-secundaria);
   font-size: 1.4rem;
   line-height: 1.25;
+  /* position: relative; */
 }
 
 h1,

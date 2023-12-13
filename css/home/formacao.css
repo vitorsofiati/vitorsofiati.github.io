@@ -1,6 +1,5 @@
 .formacao {
-  margin-top: 60px;
-  padding-top: 50px;
+  padding-top: 140px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -9,7 +8,7 @@
   margin-left: 40px;
   word-break: break-all;
   max-width: 1ch;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 900;
   line-height: 1.2;
   color: var(--cor-01);
@@ -21,9 +20,10 @@
 }
 
 .formacao-info p {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 2rem;
   font-weight: 600;
+  text-indent: 30px;
 }
 
 .graduacao-lista {
@@ -188,6 +188,10 @@
     font-size: 1.2rem;
   }
 
+  .formacao-idiomas li span {
+    font-size: .75rem;
+  }
+
   .formacao-idiomas {
     margin-top: 25px;
   }
@@ -195,13 +199,13 @@
 
 @media (max-width:600px) {
   .formacao {
-    margin-top: 60px;
+    padding-top: 180px;
     grid-template-columns: 1fr;
   }
 
   .formacao-subtitulo {
     margin: 0;
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     max-width: none;
   }
 
@@ -211,12 +215,14 @@
   }
 
   .formacao-info p {
+    font-size: 1.6rem;
     text-align: center;
   }
 
   .graduacao-lista {
     margin-top: 60px;
     flex-direction: column;
+    place-content: center;
   }
 
   .graduacao {
@@ -245,9 +251,19 @@
 }
 
 @media(max-width:400px) {
+
+  .formacao {
+    padding-top: 40px;
+  }
+
   .formacao-subtitulo {
-    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+    font-size: 3rem;
     text-align: center;
+  }
+
+  .formacao-extra ul {
+    margin-left: 14px;
   }
 
   .formacao-extra h3::before {

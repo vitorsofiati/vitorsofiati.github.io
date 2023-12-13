@@ -1,6 +1,6 @@
 .projetos-bg {
   margin: 40px auto 100px auto;
-  padding-top: 40px;
+  padding-top: 140px;
   max-width: 1400px;
 }
 
@@ -19,6 +19,7 @@
   margin-top: 100px;
   font-size: 1.8rem;
   font-weight: 600;
+  text-indent: 30px;
 }
 
 .projetos-intro a {
@@ -101,7 +102,7 @@
 @media(max-width:800px) {
 
   .projetos-intro {
-    margin-top: 60px;
+    margin-top: 80px;
     font-size: 1.6rem;
   }
 
@@ -126,6 +127,11 @@
 }
 
 @media(max-width:600px) {
+
+  .projetos-bg {
+    padding-top: 180px;
+  }
+
   .projetos-subtitulo {
     padding: 20px 0;
     font-size: 3rem;
@@ -142,11 +148,17 @@
 
 @media(max-width:400px) {
   .projetos-bg {
-    margin: 80px auto 20px auto;
+    margin: 30px auto;
+    padding-top: 40px;
   }
 
   .projetos-subtitulo {
     letter-spacing: 0.4rem;
+  }
+
+  .portfolio {
+    margin: 0 auto;
+    padding: 10px;
   }
 
   .portfolio-texto {

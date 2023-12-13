@@ -21,6 +21,7 @@
 
 .apresentacao {
   margin-left: 80px;
+  margin-bottom: 80px;
   display: grid;
   align-content: center;
   grid-column: 2/4;
@@ -34,7 +35,6 @@
 }
 
 .apresentacao p {
-  margin-bottom: 40px;
   font-size: 1.75rem;
 }
 
@@ -48,11 +48,12 @@
   padding-bottom: 60px;
   color: var(--cor-primaria);
   text-indent: 40px;
+  font-weight: 600;
 
 }
 
 .sobre a {
-  color: #0077b5;
+  color: #074969;
 }
 
 @media(max-width:800px) {

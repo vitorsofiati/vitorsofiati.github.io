@@ -47,6 +47,10 @@ img {
   padding: 10px 40px;
 }
 
+abbr {
+  text-decoration: none;
+}
+
 @media(max-width: 400px) {
   .container {
     padding: 10px 20px;

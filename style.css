@@ -2,15 +2,13 @@
 @import "./css/global/global.css";
 @import "./css/global/tipografia.css";
 
+/* utilidades */
+@import "./css/global/utilidades/cores.css";
+@import "./css/global/utilidades/componentes.css";
+
 /* conteúdos */
 @import "./css/home/header.css";
 @import "./css/home/introducao.css";
 @import "./css/home/formacao.css";
 @import "./css/home/projetos.css";
 @import "./css/home/footer.css";
-
-
-
-/* utilidades */
-@import "./css/utilidades/cores.css";
-@import "./css/utilidades/componentes.css";

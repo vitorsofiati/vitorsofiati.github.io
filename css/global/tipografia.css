@@ -1,10 +1,12 @@
-.titulo {
+.fonte-titulo {
   /* font-family: 'Nova Square'; */
   font-family: "roboto";
+  font-weight: 900;
 }
 
-.texto-padrao {
+.fonte-padrao {
   font-family: "lato";
+  font-weight: 500;
 }
 
 .texto-cards {

@@ -29,6 +29,15 @@
   padding: 10px;
 }
 
+/* HOVER NOS ICONES DE REDES */
+.footer a:hover path {
+  fill: var(--cor-d1);
+}
+
+.footer a:hover {
+  color: var(--cor-d1);
+}
+
 .emailzin {
   display: flex;
   gap: 10px;

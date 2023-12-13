@@ -1,5 +1,6 @@
 .formacao {
-  margin-top: 80px;
+  margin-top: 60px;
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -8,7 +9,7 @@
   margin-left: 40px;
   word-break: break-all;
   max-width: 1ch;
-  font-size: 6rem;
+  font-size: 5.5rem;
   font-weight: 900;
   line-height: 1.2;
   color: var(--cor-01);
@@ -17,6 +18,12 @@
 .formacao-info {
   grid-column: 2/4;
   align-self: center;
+}
+
+.formacao-info p {
+  margin-bottom: 60px;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .graduacao-lista {
@@ -56,14 +63,15 @@
 
 .graduacao h3 {
   margin-bottom: 15px;
-  font-size: 1.6rem;
   text-wrap: wrap;
   flex: 1;
+  font-size: 1.6rem;
 }
 
 .graduacao span {
-  font-size: 1rem;
   text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--cor-01);
 }
 
 .formacao-extra {
@@ -74,6 +82,7 @@
 .formacao-idiomas h3 {
   text-transform: uppercase;
   position: relative;
+  letter-spacing: 0.05rem;
 }
 
 .formacao-extra h3::before {
@@ -132,12 +141,13 @@
 
 .idiomas-lista li {
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .idiomas-lista span {
   color: var(--cor-02);
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 @media (max-width:800px) {

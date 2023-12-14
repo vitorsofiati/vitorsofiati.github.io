@@ -11,9 +11,8 @@ html {
 body {
   background-color: var(--cor-primaria);
   color: var(--cor-secundaria);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.25;
-  /* position: relative; */
 }
 
 h1,

@@ -1,5 +1,5 @@
 .index-introducao {
-  padding-top: 110px;
+  padding-top: 80px;
 }
 
 .index-introducao h1:nth-of-type(2) {
@@ -13,7 +13,7 @@
 }
 
 .index-selecao {
-  margin: 100px auto;
+  margin: 60px auto;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -64,7 +64,6 @@
   }
 
   .index-selecao {
-    margin: 40px auto;
     gap: 20px;
   }
 

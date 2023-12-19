@@ -2,7 +2,7 @@
   padding-top: 14px;
   background-color: #000;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1;
   border-bottom: 1px solid var(--cor-d1);
 }
@@ -25,6 +25,10 @@
   align-items: center;
   padding-top: 0;
   padding-bottom: 10px;
+}
+
+.header .logotipo {
+  display: block;
 }
 
 .header ul {
@@ -101,6 +105,10 @@
 }
 
 @media(max-width:400px) {
+
+  .linguagens {
+    margin: 0;
+  }
 
   .header-bg {
     position: relative;

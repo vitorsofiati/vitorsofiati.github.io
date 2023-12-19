@@ -12,3 +12,6 @@
 @import "./css/home/formacao.css";
 @import "./css/home/projetos.css";
 @import "./css/home/footer.css";
+
+/* INDEX */
+@import "./css/index/index.css";

@@ -9,16 +9,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Changa:wght@300;400;500;700;800&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <title>Vitor Sofiati</title>
 </head>
 
-<body class="index fonte-padrao">
+<body class="fonte-padrao" id="inicio">
+
 
   <header class="header-bg">
+
+    <div class="linguagens">
+      <a href="../portugues/home-pt.html"><img src="../img/icones/brasil-icone.png" width="40" height="28" alt="Bandeira do Brasil"></a>
+      <a href="../ingles/home-en.html"><img src="../img/icones/eua-icone.png" width="40" height="28" alt="Bandeira dos EUA"></a>
+    </div>
+
     <div class="header container">
-      <a href="./">
+
+      <a href="#inicio">
         <svg class="logotipo" width="85px" height="60px" xmlns="http://www.w3.org/2000/svg" viewBox="170 30 158 95" style="background: rgba(0, 0, 0, 0);" preserveAspectRatio="none">
           <defs>
             <linearGradient id="editing-sticker-gradient" x1="0.5" y1="0.2" x2="0.5" y2="0.8">
@@ -55,31 +63,122 @@
           </style>
         </svg>
       </a>
+      <nav aria-label="principal">
+        <ul>
+          <li> <a href="#formacao">Education</a> </li>
+          <li> <a href="#projetos">Projects</a> </li>
+          <li> <a href="#contato">Contact</a> </li>
+        </ul>
+      </nav>
     </div>
+
   </header>
 
-  <main class="index-introducao container">
+  <div class="introducao-bg">
+    <main class="introducao container">
 
-    <h1 class="fonte-titulo">BEM-VINDO</h1>
+      <div class="foto-perfil">
+        <img src="../img/stickman.jpg" width="1920" height="1920" alt="Definitivamente sou eu">
+      </div>
 
-    <p>Meu nome é Vitor, sou estudante de desenvolvimento web e esta é minha página profissional, onde você pode conhecer melhor a mim e ao meu trabalho. Para começarmos, por favor selecione um dos idiomas abaixo:</p>
-    <h1 class="fonte-titulo">WELCOME</h1>
-    <p>My name is Vitor, I'm a web development student and this is my professional webpage, where you may get to know more about me and my job. To get started, please select one of the languages below:</p>
-    <div class="index-selecao">
-      <a href="./portugues/home-pt.html">
-        <img src="./img/linguagens/brasil.png" alt="">
-        <span>Português</span>
-      </a>
-      <a href="./ingles/home-en.html">
-        <img src="./img/linguagens/eua.png" alt="">
-        <span>English</span>
-      </a>
+      <div class="apresentacao">
+        <h1 class="fonte-titulo">Vitor Sofiati</h1>
+        <p>Estudante de desenvolvimento com conhecimentos em <em><abbr title="HyperText Markup Language">HTML</abbr></em>, <em><abbr title="Cascading Style Sheets">CSS</abbr></em> e <em>JavaScript.</em></p>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="sobre-bg">
+    <article class="sobre container teste10" id="sobre">
+      Muito prazer, sou o Vitor! Aqui vou fazer uma breve introdução, falar sobre minha formação como técnico em eletrônica e a graduação em ADS, sobre meu trabalho atual em um hospital e a jornada rumo à area de desenvolvimento. Para informações profissionais completas, vou linkar meu <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank"><em>Linkedin</em></a> aqui nesse texto. Mais baixo estão os projetos que estou fazendo pra estudar.
+    </article>
+  </div>
+
+  <section class="formacao container" id="formacao">
+    <h2 class="formacao-subtitulo fonte-titulo">FORMAÇÃO</h2>
+
+    <div class="formacao-info">
+
+      <p>Aqui estão minhas principais formações, cursos e certificados relacionados à area.</p>
+      <ul class="graduacao-lista fonte-card">
+        <li class="graduacao">
+          <span>Tecnólogo</span>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <span>Universidade Estácio de Sá</span>
+        </li>
+        <li class="graduacao">
+          <span>Técnico</span>
+          <h3>Curso Técnico em Eletrônica</h3>
+          <span>Escola Técnica Estadual Parobé</span>
+        </li>
+      </ul>
+
+      <div class="formacao-extra">
+
+        <h3 class=""> Certificações complementares</h3>
+        <ul class="cursos-lista fonte-lista">
+          <li>HTML e CSS para Iniciantes | Origamid
+            <span>46h</span>
+            <a href="https://www.origamid.com/certificate/f8e086ce" target="_blank" aria-label="Certificado do curso"></a>
+          </li>
+          <li>7º Imersão Dev | Alura
+            <span>04h</span>
+            <a href="https://cursos.alura.com.br/immersion/certificate/7d3fda45-eeb9-45ec-ae0e-fce3ff3a59b9" target="_blank" aria-label="Certificado do curso"></a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="formacao-idiomas">
+        <h3>IDIOMAS</h3>
+        <ul class="idiomas-lista fonte-lista">
+          <li>Inglês<span> / avançado</span></li>
+          <li>Espanhol<span> / iniciante</span></li>
+        </ul>
+      </div>
+
     </div>
-  </main>
 
+  </section>
+
+  <section class="projetos-bg" id="projetos">
+
+    <h2 class="projetos-subtitulo fonte-titulo">PROJETOS</h2>
+    <div class="projetos container">
+      <p class="projetos-intro">Além de ajudar a fixar bem o conteúdo que estou aprendendo, realizar projetos é uma forma de conseguir uma experiência e me preparar melhor para o mercado :) . Para informações mais completas, código e etc, pode acessar meu perfil no <a href="https://github.com/vitorsofiati?tab=repositories" target="_blank"><em>Github</em></a>. </p>
+
+      <div class="projetos-grid">
+
+        <div class="portfolio">
+          <h3 class="fonte-card">Bikcraft</h3>
+          <img src="../img/projetos/bikcraft/bikcraft01-240p.jpg" width="320" height="240" alt="Site de venda de bicicletas">
+          <div class="portfolio-texto">
+            <p class="fonte-lista">Projeto final do curso <em>HTML e CSS para iniciantes</em>, da Origamid. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <a class="botao" href="https://github.com/vitorsofiati/bikcraft" target="_blank">Veja Mais</a>
+          </div>
+        </div>
+
+        <div class="portfolio">
+          <h3 class="fonte-card">Tabela de Classificação</h3>
+          <img src="../img/projetos/alura/alura01-240p.jpg" width="320" height="240" alt="Site de venda de bicicletas">
+          <div class="portfolio-texto">
+            <p class="fonte-lista">Projeto final da <em>7º Imersão Dev</em>, da Alura. Aqui vou colocar uma descrição mais detalhada com os temas abordados.</p>
+            <!-- página mostrando cada projeto? -->
+            <a class="botao" href="https://github.com/vitorsofiati/imersao-alura" target="_blank">
+              Veja Mais</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <footer class="footer-bg">
     <div class="footer container" id="contato">
+
+      <!-- <a class="logotipo" href="./"><img src="./img/vs.svg" width="100" height="75" alt="Logotipo temporario"></a> -->
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank" aria-label="Perfil do Linkedin">
@@ -139,7 +238,7 @@
     </div>
   </footer>
 
-  <script src="./js/idioma.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

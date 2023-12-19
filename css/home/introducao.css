@@ -83,7 +83,7 @@
 
 @media(max-width:600px) {
   .introducao-bg {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding-top: 80px;
     box-shadow: none;
   }

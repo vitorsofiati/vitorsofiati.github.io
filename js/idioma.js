@@ -1,10 +1,12 @@
-// const idiomaUsuario = navigator.language;
-// if (idiomaUsuario == "pt-BR") {
+// Redireciona o usuário para a página específica baseado na linguagem do navegador
 
-//   window.document.location.href = "./portugues/home-pt.html";
-// } else {
-//   window.document.location.href = "./ingles/home-en.html";
-// }
+const idiomaUsuario = navigator.language;
+if (idiomaUsuario == "pt-BR") {
+
+  window.document.location.href = "./portugues/home-pt.html";
+} else {
+  window.document.location.href = "./ingles/home-en.html";
+}
 
 
 

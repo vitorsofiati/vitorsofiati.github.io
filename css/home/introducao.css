@@ -49,6 +49,7 @@
   color: var(--cor-primaria);
   text-indent: 30px;
   font-weight: 600;
+  text-align: justify;
 }
 
 .sobre a {

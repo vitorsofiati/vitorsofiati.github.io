@@ -15,12 +15,12 @@
   user-select: none;
 }
 
-.graduation {
+.ingles .formacao-subtitulo {
   line-height: .95;
 }
 
 /* Letra I bugada na palavra GRADUATION */
-.graduation span {
+.ingles .formacao-subtitulo span {
   display: inline-block;
   margin-left: 14px;
 }
@@ -227,6 +227,10 @@
     max-width: none;
   }
 
+  .ingles .formacao-subtitulo span {
+    margin: 0;
+  }
+
   .formacao-info {
     margin-top: 40px;
     grid-column: auto;
@@ -279,6 +283,10 @@
     letter-spacing: 0.1rem;
     font-size: 3rem;
     text-align: center;
+  }
+
+  .ingles .formacao-subtitulo {
+    font-size: 2.6rem;
   }
 
   .formacao-extra ul {

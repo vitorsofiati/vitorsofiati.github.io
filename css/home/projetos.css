@@ -1,6 +1,6 @@
 .projetos-bg {
-  margin: 40px auto 100px auto;
-  padding-top: 140px;
+  margin: 0 auto 100px auto;
+  padding-top: 120px;
   max-width: 1400px;
 }
 
@@ -17,13 +17,12 @@
 }
 
 .projetos-intro {
-  margin-top: 100px;
+  margin-top: 60px;
   font-size: 1.8rem;
   font-weight: 600;
   text-indent: 30px;
   text-align: justify;
 }
-
 .projetos-intro a {
   color: var(--cor-d1);
 }
@@ -37,6 +36,7 @@
 
 .portfolio {
   display: grid;
+  padding: 20px 30px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   place-items: start;
@@ -44,7 +44,7 @@
   background-color: #111;
   box-sizing: content-box;
   border-radius: 4px;
-  padding: 20px 30px;
+  border: 1px solid var(--cor-d1);
 }
 
 .portfolio h3 {
@@ -56,7 +56,7 @@
 
 .portfolio img {
   border: 1px solid #000;
-  outline: 1px solid var(--cor-d1);
+  outline: 1px solid var(--cor-secundaria);
   min-width: 220px;
 }
 
@@ -106,7 +106,7 @@
 @media(max-width:800px) {
 
   .projetos-intro {
-    margin-top: 80px;
+    margin-top: 40px;
     font-size: 1.6rem;
   }
 

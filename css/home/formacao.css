@@ -1,28 +1,35 @@
 .formacao {
-  padding-top: 140px;
+  padding-top: 130px;
+  padding-bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .formacao-subtitulo {
-  margin-left: 40px;
+  /* margin-left: 80px; */
   word-break: break-all;
   max-width: 1ch;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1.2;
   color: var(--cor-01);
   user-select: none;
+  place-self: center;
+}
+
+.formacao-subtitulo .cedilha {
+  display: inline-block;
+  padding-bottom: 20px;
 }
 
 .ingles .formacao-subtitulo {
-  line-height: .95;
+  line-height: 1.2;
 }
 
 /* Letra I bugada na palavra GRADUATION */
 .ingles .formacao-subtitulo span {
   display: inline-block;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 .formacao-info {
@@ -57,7 +64,7 @@
   flex: 1;
   gap: 20px;
   position: relative;
-  border: 1px solid var(--cor-d1);
+  border: 2px solid var(--cor-d1);
   cursor: default;
 }
 
@@ -169,13 +176,9 @@
 }
 
 @media (max-width:800px) {
-  .formacao-subtitulo {
-    font-size: 5rem;
-  }
 
-  .graduacao-lista {
-    margin-top: 10px;
-    gap: 20px;
+  .formacao-subtitulo{
+    margin-right: 40px;
   }
 
   .graduacao {
@@ -281,12 +284,12 @@
 
   .formacao-subtitulo {
     letter-spacing: 0.1rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
   }
 
   .ingles .formacao-subtitulo {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   .formacao-extra ul {

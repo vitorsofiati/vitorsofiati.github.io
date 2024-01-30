@@ -26,14 +26,13 @@
   border: none;
 }
 
-
 .header {
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
   padding-top: 0;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
 }
 
 .header .logotipo {
@@ -52,7 +51,7 @@
   border-radius: 4px;
 }
 
-.header li::after {
+.header li a::after {
   content: "";
   display: block;
   height: 4px;
@@ -60,7 +59,7 @@
   background-color: var(--cor-d1);
 }
 
-.header li:hover::after {
+.header li a:hover::after, .header li a.ativo::after {
   width: 100%;
   transition: 0.3s;
 }
@@ -102,13 +101,13 @@
     border: 2px solid var(--cor-d1);
   }
 
-  .header li:hover {
+  .header li:hover, .header li.ativo {
     background-color: var(--cor-d1);
     color: var(--cor-secundaria);
     border: 2px solid var(--cor-secundaria);
   }
 
-  .header li:hover::after {
+  .header li:hover::after, .header li a.ativo::after {
     width: 0;
   }
 }

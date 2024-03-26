@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: var(--cor-primaria);
+  background: url(../../img/background/teste.jpg);
   color: var(--cor-secundaria);
   font-size: 1.3rem;
   line-height: 1.25;

@@ -21,5 +21,10 @@
 .js .anime {
   opacity: 1;
   transform: none;
-  transition: transform 1.5s, opacity 2.2s;
+  transition: transform 1.8s, opacity 2.2s;
+}
+
+.js .anime-off {
+  opacity: 0;
+  transition: transform 1.8s, opacity 2.2s;
 }

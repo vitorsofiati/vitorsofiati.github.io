@@ -1,29 +1,10 @@
 .header-bg {
   padding-top: 14px;
-  background-color: #000;
+  background-color: #0a0a0a;
   position: sticky;
   top: 0px;
   z-index: 1;
   border-bottom: 1px solid var(--cor-d1);
-}
-
-.linguagens {
-  margin-right: 20px;
-  display: flex;
-  justify-content: end;
-  gap: 5px;
-}
-
-.linguagens a {
-  padding: 0 10px;
-}
-
-.linguagens img {
-  border: 2px solid transparent;
-}
-
-.linguagens img:hover {
-  border: none;
 }
 
 .header {
@@ -37,9 +18,12 @@
 
 .header .logotipo {
   display: block;
+  position: absolute;
+  top: -22px;
 }
 
 .header ul {
+  margin-left: auto;
   font-size: 1.6rem;
   font-weight: bold;
   display: flex;
@@ -51,7 +35,7 @@
   border-radius: 4px;
 }
 
-.header li a::after {
+.header li::after {
   content: "";
   display: block;
   height: 4px;
@@ -59,9 +43,29 @@
   background-color: var(--cor-d1);
 }
 
-.header li a:hover::after, .header li a.ativo::after {
+.header li:hover::after, .header li.ativo::after {
   width: 100%;
   transition: 0.3s;
+}
+
+.linguagens {
+  margin-right: 20px;
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  /* position: absolute; */
+}
+
+.linguagens a {
+  padding: 0 10px;
+}
+
+.linguagens img {
+  border: 2px solid transparent;
+}
+
+.linguagens img:hover {
+  border: none;
 }
 
 @media(max-width:800px) {
@@ -77,6 +81,13 @@
     gap: 0;
   }
 
+  .linguagens a{
+    padding: 0 4px;
+  }
+
+  .header-bg{
+    padding-top: 8px;
+  }
   .header {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -118,9 +129,8 @@
     margin: 0;
   }
 
-  .header-bg {
-    position: relative;
-
+  .header {
+    margin: 10px;
   }
 
   .header ul {

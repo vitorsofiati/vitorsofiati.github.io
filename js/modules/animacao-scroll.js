@@ -28,10 +28,9 @@ const mediaQuery600 = window.matchMedia('(max-width: 600px)');
 
 const tamanhoDaTela = () => {
 	if (mediaQuery600.matches) {
-		console.log(formacaoSubtitulo);
-		formacaoSubtitulo.classList.replace('fadeInDown', 'fadeInRight');
+		formacaoSubtitulo.classList.replace('fadeInDown', 'fadeInLeft');
 	} else {
-		formacaoSubtitulo.classList.replace('fadeInRight', 'fadeInDown');
+		formacaoSubtitulo.classList.replace('fadeInLeft', 'fadeInDown');
 	}
 };
 tamanhoDaTela();

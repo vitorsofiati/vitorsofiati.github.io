@@ -1,7 +1,7 @@
 .projetos-bg {
-  margin: 0 auto 100px auto;
+  margin: 0 0 100px 0;
   padding-top: 120px;
-  max-width: 1400px;
+  max-width: 1600px;
 }
 
 .projetos-subtitulo {
@@ -27,51 +27,65 @@
   color: var(--cor-d1);
 }
 
+.projetos-wrapper {
+  margin-top: 40px;
+  overflow: hidden;
+}
+
 .projetos-grid {
-  margin-top: 120px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+display: flex;
+gap: 80px;
+/* teste para o slide */
+transform: translate3d(-800px,0,0);
 }
 
 .portfolio {
-  display: grid;
-  padding: 20px 30px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  place-items: start;
-  gap: 20px;
+  padding: 20px 80px;
+  min-width: 50vw;
   background-color: #111;
-  box-sizing: content-box;
+  box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid var(--cor-d1);
+  border: 2px solid var(--cor-d1);
+  position: relative;
 }
 
 .portfolio h3 {
+  margin-bottom: 20px;
   grid-column: 1/-1;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
-  cursor: default;
-}
-
-.portfolio img {
-  border: 1px solid #000;
-  outline: 1px solid var(--cor-secundaria);
-  min-width: 220px;
+  text-align: center;
+  cursor: default;  
 }
 
 .portfolio-texto {
-  place-self: start;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  gap: 10px;
-  height: 100%;
+  margin-bottom: 20px;
   text-align: justify;
-  align-items: center;
+}
+
+.portfolio img {
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  outline: 1px solid var(--cor-secundaria);
 }
 
 .portfolio .botao {
-  place-self: end;
+  margin-left: auto;
+  max-width: max-content;
+}
+
+.portfolio .porfolio-tecnologias {
+  display: block;
+}
+
+.portfolio .portfolio-tecnologias span {
+  margin: 8px 4px;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  font-size: .8rem;
 }
 
 @media(max-width:1400px) {

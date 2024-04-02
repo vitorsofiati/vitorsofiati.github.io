@@ -4,7 +4,7 @@ export class Slide {
 	constructor(slide, wrapper) {
 		this.slide = document.querySelector(slide);
 		this.wrapper = document.querySelector(wrapper);
-		this.dist = { finalPosition: 0, startX: 0, movement: 0 };
+		this.dist = { finalPosition: 0, startX: 0, movement: 0, movePosition: 0 };
 		this.activeClass = 'ativo';
 
 		this.changeEvent = new Event('changeEvent');
@@ -26,6 +26,8 @@ export class Slide {
 	}
 
 	onStart(event) {
+		// Zerar o parâmetro de distância pra quando ocorrer um click solo ele não mudar o slide.
+		this.dist.movement = 0;
 		let movetype;
 		if (event.type === 'mousedown') {
 			event.preventDefault();

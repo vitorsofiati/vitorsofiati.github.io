@@ -10,10 +10,6 @@ export class Slide {
 		this.changeEvent = new Event('changeEvent');
 	}
 
-	reset() {
-		this.dist.movement = 0;
-	}
-
 	transition(active) {
 		this.slide.style.transition = active ? 'transform .3s' : '';
 	}
@@ -41,6 +37,7 @@ export class Slide {
 			this.dist.startX = event.changedTouches[0].clientX;
 			movetype = 'touchmove';
 		}
+
 		this.wrapper.addEventListener(movetype, this.onMove);
 		this.transition(false);
 	}
@@ -50,7 +47,7 @@ export class Slide {
 			event.type === 'mousemove'
 				? event.clientX
 				: event.changedTouches[0].clientX;
-		let finalPosition = this.updatePosition(pointerPosition);
+		const finalPosition = this.updatePosition(pointerPosition);
 		this.moveSlide(finalPosition);
 	}
 
@@ -63,7 +60,7 @@ export class Slide {
 	}
 
 	changeSlideOnEnd() {
-		if (this.dist.movement > 180 && this.index.next !== undefined) {
+		if (this.dist.movement > 120 && this.index.next !== undefined) {
 			this.activeNextSlide();
 		} else if (this.dist.movement < -120 && this.index.prev !== undefined) {
 			this.activePrevSlide();

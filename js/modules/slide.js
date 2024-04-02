@@ -4,10 +4,14 @@ export class Slide {
 	constructor(slide, wrapper) {
 		this.slide = document.querySelector(slide);
 		this.wrapper = document.querySelector(wrapper);
-		this.dist = { finalPosition: 0, startX: 0, movement: 0 };
+		this.dist = { finalPosition: 0, startX: 0, movement: 0, movePosition: 0 };
 		this.activeClass = 'ativo';
 
 		this.changeEvent = new Event('changeEvent');
+	}
+
+	reset() {
+		this.dist.movement = 0;
 	}
 
 	transition(active) {
@@ -26,6 +30,8 @@ export class Slide {
 	}
 
 	onStart(event) {
+		// Zerar o parâmetro de distância pra quando ocorrer um click solo ele não mudar o slide.
+		this.dist.movement = 0;
 		let movetype;
 		if (event.type === 'mousedown') {
 			event.preventDefault();
@@ -35,7 +41,6 @@ export class Slide {
 			this.dist.startX = event.changedTouches[0].clientX;
 			movetype = 'touchmove';
 		}
-
 		this.wrapper.addEventListener(movetype, this.onMove);
 		this.transition(false);
 	}
@@ -45,7 +50,7 @@ export class Slide {
 			event.type === 'mousemove'
 				? event.clientX
 				: event.changedTouches[0].clientX;
-		const finalPosition = this.updatePosition(pointerPosition);
+		let finalPosition = this.updatePosition(pointerPosition);
 		this.moveSlide(finalPosition);
 	}
 
@@ -58,7 +63,7 @@ export class Slide {
 	}
 
 	changeSlideOnEnd() {
-		if (this.dist.movement > 120 && this.index.next !== undefined) {
+		if (this.dist.movement > 180 && this.index.next !== undefined) {
 			this.activeNextSlide();
 		} else if (this.dist.movement < -120 && this.index.prev !== undefined) {
 			this.activePrevSlide();

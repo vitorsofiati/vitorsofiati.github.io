@@ -75,7 +75,7 @@
 }
 
 .graduacao::before {
-  content: "";
+  content: '';
   display: block;
   height: 40px;
   width: 6px;
@@ -113,8 +113,8 @@
 
 .formacao-extra h3::before {
   display: block;
-  content: "";
-  background: url("../../img/icones/cursos.svg");
+  content: '';
+  background: url('../../img/icones/cursos.svg');
   height: 30px;
   width: 30px;
   background-size: contain;
@@ -125,11 +125,12 @@
 
 .cursos-lista,
 .idiomas-lista {
-  margin: 20px 100px 0 30px;
+  margin: 20px 60px 0 30px;
 }
 
 .cursos-lista li {
-  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 20px;
@@ -138,12 +139,16 @@
   position: relative;
 }
 
+.cursos-lista li + li {
+  border-top: 1px solid rgba(135, 88, 255, 0.2);
+}
+
 .cursos-lista a {
   height: 25px;
   width: 25px;
-  background: url("../../img/icones/certificado.svg") no-repeat;
+  background: url('../../img/icones/certificado.svg') no-repeat;
   background-size: contain;
-  border: 1px solid transparent
+  border: 1px solid transparent;
 }
 
 .cursos-lista a:hover {
@@ -160,8 +165,8 @@
 
 .formacao-idiomas h3::before {
   display: block;
-  content: "";
-  background: url("../../img/icones/linguagem.svg");
+  content: '';
+  background: url('../../img/icones/linguagem.svg');
   height: 40px;
   width: 40px;
   background-size: contain;
@@ -181,9 +186,8 @@
   font-size: 1rem;
 }
 
-@media (max-width:800px) {
-
-  .formacao-subtitulo{
+@media (max-width: 800px) {
+  .formacao-subtitulo {
     margin-top: 40px;
     margin-right: 40px;
   }
@@ -208,6 +212,7 @@
   .cursos-lista,
   .idiomas-lista {
     margin-top: 10px;
+    margin-right: 0;
   }
 
   .cursos-lista li,
@@ -217,7 +222,7 @@
   }
 
   .formacao-idiomas li span {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
 
   .formacao-idiomas {
@@ -225,9 +230,8 @@
   }
 }
 
-@media (max-width:600px) {
-
-  .formacao-bg{
+@media (max-width: 600px) {
+  .formacao-bg {
     margin-top: 100px;
     grid-template-columns: 1fr;
   }
@@ -249,7 +253,7 @@
     border-width: 2px 0;
     font-size: 3rem;
     text-align: center;
-    letter-spacing: .8rem;
+    letter-spacing: 0.8rem;
   }
 
   .formacao-subtitulo .cedilha {
@@ -299,15 +303,13 @@
     margin-left: 40px;
   }
 
-
   .cursos-lista,
   .idiomas-lista {
     margin: 10px auto 0 30px;
   }
 }
 
-@media(max-width:400px) {
-
+@media (max-width: 400px) {
   .formacao {
     padding-top: 40px;
   }
@@ -335,5 +337,4 @@
     top: -8px;
     left: -50px;
   }
-
 }

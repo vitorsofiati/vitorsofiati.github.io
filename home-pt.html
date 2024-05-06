@@ -1,268 +1,521 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/vitorsofiati/vitorsofiati.github.io/main/img/thumbnail-pt.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/vitorsofiati/vitorsofiati.github.io/main/img/thumbnail-pt.jpg"
+    />
+    <meta
+      name="description"
+      content="Página pessoal de desenvolvedor. Informações profissionais, portfolio e contatos."
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://raw.githubusercontent.com/vitorsofiati/vitorsofiati.github.io/main/img/thumbnail-pt.jpg">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/vitorsofiati/vitorsofiati.github.io/main/img/thumbnail-pt.jpg">
-  <meta name="description" content="Página pessoal de desenvolvedor. Informações profissionais, portfolio e contatos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Changa:wght@300;400;500;700;800&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
 
+    <title>Vitor Sofiati | Desenvolvedor Web</title>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Changa:wght@300;400;500;700;800&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,500;0,700;0,900;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
-
-  <title>Vitor Sofiati | Desenvolvedor Web</title>
-</head>
-
-<body class="fonte-padrao" id="inicio">
-
-
-  <header class="header-bg">
-
-    <div class="linguagens">
-      <a href="./home-pt.html"><img src="../img/icones/brasil-icone.png" width="40" height="28" alt="Bandeira do Brasil"></a>
-      <a href="./home-en.html"><img src="../img/icones/eua-icone.png" width="40" height="28" alt="Bandeira dos EUA"></a>
-    </div>
-
-    <div class="header container">
-
-      <a href="#inicio">
-        <svg class="logotipo" width="75px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="170 30 158 95" style="background: rgba(0, 0, 0, 0);" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="editing-sticker-gradient" x1="0.5" y1="0.2" x2="0.5" y2="0.8">
-              <stop offset="0" stop-color="#fafafa"></stop>
-              <stop offset="1" stop-color="#8758ff"></stop>
-            </linearGradient>
-            <filter id="editing-sticker" x="-100%" y="-100%" width="300%" height="300%">
-              <feMorphology operator="erode" radius="1" in="SourceAlpha" result="alpha-erode"></feMorphology>
-              <feConvolveMatrix order="3,3" divisor="1" kernelMatrix="0 1 0 1 1 1 0 1 0" in="alpha-erode" result="alpha-round"></feConvolveMatrix>
-              <feMorphology operator="dilate" radius="3.5" in="alpha-round" result="dilate-shadow"></feMorphology>
-              <feGaussianBlur in="dilate-shadow" stdDeviation="1.5" result="shadow"></feGaussianBlur>
-              <feFlood flood-color="#000" result="flood-sticker"></feFlood>
-              <feComposite operator="in" in="flood-sticker" in2="alpha-round" result="comp-sticker"></feComposite>
-              <feMorphology operator="dilate" radius="3" in="comp-sticker" result="morph-sticker"></feMorphology>
-              <feConvolveMatrix order="3,3" divisor="1" kernelMatrix="0 1 0 1 1 1 0 1 0" in="morph-sticker" result="sticker"></feConvolveMatrix>
-              <feMerge>
-                <feMergeNode in="shadow"></feMergeNode>
-                <feMergeNode in="sticker"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-              </feMerge>
-            </filter>
-          </defs>
-          <g filter="url(#editing-sticker)">
-            <g transform="translate(177.61501717567444, 114.30000114440918)">
-              <path d="M52.64-2.46L52.64-2.46L52.64-2.46Q50.92-0.98 47.29 0.12L47.29 0.12L47.29 0.12Q43.66 1.23 39.36 1.23L39.36 1.23L39.36 1.23Q34.19 1.23 30.50-0.31L30.50-0.31L30.50-0.31Q26.81-1.84 25.46-4.55L25.46-4.55L25.46-4.55Q24.11-7.38 22.14-11.87L22.14-11.87L22.14-11.87Q20.17-16.36 18.02-21.89L18.02-21.89L18.02-21.89Q15.87-27.43 13.59-33.64L13.59-33.64L13.59-33.64Q11.32-39.85 9.22-46.25L9.22-46.25L9.22-46.25Q7.13-52.64 5.29-58.79L5.29-58.79L5.29-58.79Q3.44-64.94 2.09-70.36L2.09-70.36L2.09-70.36Q3.81-72.08 7.07-73.49L7.07-73.49L7.07-73.49Q10.33-74.91 14.02-74.91L14.02-74.91L14.02-74.91Q18.57-74.91 21.46-73.00L21.46-73.00L21.46-73.00Q24.35-71.09 25.71-65.93L25.71-65.93L25.71-65.93Q29.03-53.87 32.41-42.87L32.41-42.87L32.41-42.87Q35.79-31.86 39.48-19.93L39.48-19.93L40.22-19.93L40.22-19.93Q43.54-31.49 47.05-45.14L47.05-45.14L47.05-45.14Q50.55-58.79 53.75-72.32L53.75-72.32L53.75-72.32Q55.96-73.43 58.49-74.17L58.49-74.17L58.49-74.17Q61.01-74.91 64.21-74.91L64.21-74.91L64.21-74.91Q68.76-74.91 71.95-72.88L71.95-72.88L71.95-72.88Q75.15-70.85 75.15-66.17L75.15-66.17L75.15-66.17Q75.15-63.47 73.86-58.30L73.86-58.30L73.86-58.30Q72.57-53.14 70.54-46.68L70.54-46.68L70.54-46.68Q68.51-40.22 65.99-33.21L65.99-33.21L65.99-33.21Q63.47-26.20 60.95-19.99L60.95-19.99L60.95-19.99Q58.42-13.78 56.21-9.04L56.21-9.04L56.21-9.04Q54.00-4.30 52.64-2.46ZM112.91-27.92L107.75-29.64L107.75-29.64Q102.34-31.49 97.91-33.39L97.91-33.39L97.91-33.39Q93.48-35.30 90.28-38.01L90.28-38.01L90.28-38.01Q87.08-40.71 85.30-44.46L85.30-44.46L85.30-44.46Q83.52-48.22 83.52-53.63L83.52-53.63L83.52-53.63Q83.52-64.08 91.57-70.36L91.57-70.36L91.57-70.36Q99.63-76.63 114.14-76.63L114.14-76.63L114.14-76.63Q119.43-76.63 123.98-75.89L123.98-75.89L123.98-75.89Q128.53-75.15 131.79-73.62L131.79-73.62L131.79-73.62Q135.05-72.08 136.90-69.68L136.90-69.68L136.90-69.68Q138.74-67.28 138.74-64.08L138.74-64.08L138.74-64.08Q138.74-60.88 137.27-58.61L137.27-58.61L137.27-58.61Q135.79-56.33 133.70-54.73L133.70-54.73L133.70-54.73Q131.00-56.46 126.44-57.75L126.44-57.75L126.44-57.75Q121.89-59.04 116.48-59.04L116.48-59.04L116.48-59.04Q110.95-59.04 108.36-57.50L108.36-57.50L108.36-57.50Q105.78-55.96 105.78-53.63L105.78-53.63L105.78-53.63Q105.78-51.78 107.38-50.61L107.38-50.61L107.38-50.61Q108.98-49.45 112.18-48.46L112.18-48.46L118.69-46.37L118.69-46.37Q130.26-42.68 136.47-36.96L136.47-36.96L136.47-36.96Q142.68-31.24 142.68-21.40L142.68-21.40L142.68-21.40Q142.68-10.95 134.44-4.49L134.44-4.49L134.44-4.49Q126.20 1.97 110.21 1.97L110.21 1.97L110.21 1.97Q104.55 1.97 99.69 1.05L99.69 1.05L99.69 1.05Q94.83 0.12 91.20-1.66L91.20-1.66L91.20-1.66Q87.58-3.44 85.55-6.09L85.55-6.09L85.55-6.09Q83.52-8.73 83.52-12.18L83.52-12.18L83.52-12.18Q83.52-15.74 85.61-18.27L85.61-18.27L85.61-18.27Q87.70-20.79 90.16-22.14L90.16-22.14L90.16-22.14Q93.60-19.43 98.58-17.47L98.58-17.47L98.58-17.47Q103.57-15.50 109.47-15.50L109.47-15.50L109.47-15.50Q115.50-15.50 117.96-17.34L117.96-17.34L117.96-17.34Q120.42-19.19 120.42-21.65L120.42-21.65L120.42-21.65Q120.42-24.11 118.45-25.40L118.45-25.40L118.45-25.40Q116.48-26.69 112.91-27.92L112.91-27.92Z" fill="url(#editing-sticker-gradient)" stroke="#eee" stroke-width="2"></path>
-            </g>
-          </g>
-          <style>
-            text {
-              font-size: 64px;
-              font-family: Arial Black;
-              text-anchor: middle;
-            }
-          </style>
-        </svg>
-      </a>
-      <nav aria-label="principal">
-        <ul>
-          <li> <a href="#formacao">Formação</a> </li>
-          <li> <a href="#projetos">Projetos</a> </li>
-          <li> <a href="#contato">Contato</a> </li>
-        </ul>
-      </nav>
-    </div>
-
-  </header>
-
-  <div class="introducao-bg">
-    <main class="introducao container">
-
-      <div class="foto-perfil">
-        <img src="../img/foto-perfil.jpg" width="758" height="769" alt="Definitivamente sou eu">
+  <body class="fonte-padrao" id="inicio">
+    <header class="header-bg">
+      <div class="linguagens">
+        <a href="./home-pt.html"
+          ><img
+            src="../img/icones/brasil-icone.png"
+            width="40"
+            height="28"
+            alt="Bandeira do Brasil"
+        /></a>
+        <a href="./home-en.html"
+          ><img
+            src="../img/icones/eua-icone.png"
+            width="40"
+            height="28"
+            alt="Bandeira dos EUA"
+        /></a>
       </div>
 
-      <div class="apresentacao">
-        <h1 class="fonte-titulo">Vitor Sofiati</h1>
-        <p>Estudante de desenvolvimento web com habilidades em <em><abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr></em>, <em><abbr title="Folhas de Estilo em Cascata">CSS</abbr></em> e <em>JavaScript.</em></p>
-      </div>
-
-    </main>
-  </div>
-
-  <div class="sobre-bg">
-    <article class="sobre container" id="sobre">
-      Muito prazer, sou o Vitor!<em> Técnico em eletrônica</em> e estudante de <em>Análise e Desenvolvimento de Sistemas</em>. Em processo de transição de carreira, estudo desenvolvimento web através da faculdade, cursos e projetos pessoais. Aqui neste site você encontra minhas informações e projetos mais relevantes, mas caso prefira, fique à vontade para acessar meu perfil no <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank"><em>Linkedin</em></a>.
-    </article>
-  </div>
-
-  <section class="formacao-bg" id="formacao">
-    <h2 data-anime="400" class="formacao-subtitulo fonte-titulo fadeInDown js-anima">FORMA<span class="cedilha">Ç</span>ÃO</h2>
-    <div class="formacao container">
-
-      <div class="formacao-info">
-
-        <p>Aqui se encontram minhas principais graduações, cursos e certificados.</p>
-
-        <ul class="graduacao-lista fonte-card">
-          <li class="graduacao">
-            <span>Tecnólogo</span>
-            <h3>Análise e Desenvolvimento de Sistemas</h3>
-            <span>Universidade Estácio de Sá</span>
-          </li>
-          <li class="graduacao">
-            <span>Técnico</span>
-            <h3>Curso Técnico em Eletrônica</h3>
-            <span>Escola Técnica Estadual Parobé</span>
-          </li>
-        </ul>
-
-        <div class="formacao-extra">
-
-          <h3> Certificações complementares</h3>
-
-          <ul class="cursos-lista fonte-lista">
-            <li>JavaScript Completo ES6 | Origamid
-              <span>74h</span>
-              <a href="https://origamid.com/certificate/91ba04fc" target="_blank" aria-label="Certificado do curso"></a>
-            </li>
-            <li>HTML e CSS para Iniciantes | Origamid
-              <span>46h</span>
-              <a href="https://www.origamid.com/certificate/f8e086ce" target="_blank" aria-label="Certificado do curso"></a>
-            </li>
-            <li>7º Imersão Dev | Alura
-              <span>04h</span>
-              <a href="https://cursos.alura.com.br/immersion/certificate/7d3fda45-eeb9-45ec-ae0e-fce3ff3a59b9" target="_blank" aria-label="Certificado do curso"></a>
-            </li>
-          </ul>
-
-        </div>
-
-        <div class="formacao-idiomas">
-          <h3>IDIOMAS</h3>
-          <ul class="idiomas-lista fonte-lista">
-            <li>Inglês<span> / avançado</span></li>
-            <li>Espanhol<span> / iniciante</span></li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="projetos-bg" id="projetos">
-
-    <h2 data-anime="400" class="projetos-subtitulo fonte-titulo fadeInLeft js-anima">PROJETOS</h2>
-    <div class="projetos container">
-      <p class="projetos-intro">Além de ajudar na fixação do conteúdo que estou aprendendo, realizar projetos é uma forma de adquirir experiência e me preparar melhor para o mercado. Aqui você encontra os projetos mais relevantes, porém é possível visualizar o portfólio completo nos meus repositórios do <a href="https://github.com/vitorsofiati?tab=repositories" target="_blank"><em>Github</em></a>. </p>
-    </div>
-
-    <div class="projetos-wrapper">
-      <ul class="projetos-slide">
-        <li class="portfolio">
-          <h3 class="fonte-card">Bikcraft</h3>
-          <p class="portfolio-texto fonte-lista">Site para a venda de bicicletas. Projeto final do curso <em>HTML e CSS para iniciantes</em>, da plataforma Origamid.</p>
-          <img src="./img/projetos/bikcraft/bikcraft-720p.jpg" width="1280" height="720" alt="Site de venda de bicicletas">
-          <a class="botao" href="https://vitorsofiati.github.io/bikcraft" target="_blank">Acesse o Site</a>
-          <div class="portfolio-tecnologias">
-            <h4>Tecnologias usadas:</h4>
-            <span>JavaScript</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-          </div>
-        </li>
-
-        <li class="portfolio">
-          <h3 class="fonte-card">Animais Fantásticos</h3>
-          <p class="portfolio-texto fonte-lista">Criação de um site sobre animais fantásticos. Projeto final do curso <em>JavaScript ES6 Completo</em>, da plataforma Origamid.</p>
-          <img src="./img/projetos/animais-fantasticos/animais-fantasticos-720p.jpg" width="1280" height="720" alt="Site sobre animais fantásticos">
-          <a class="botao" href="https://vitorsofiati.github.io/animais-fantasticos" target="_blank">Acesse o Site</a>
-          <div class="portfolio-tecnologias">
-            <h4>Tecnologias usadas:</h4>
-            <span>JavaScript</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-          </div>
-        </li>
-
-        <li class="portfolio">
-          <h3 class="fonte-card">Tabela de Classificação</h3>
-          <div class="portfolio-texto">
-          <p class="portfolio-texto fonte-lista">Tabela de classificação com inserção de jogadores utilizando <abbr title="JavaScript">JS</abbr>. Projeto final da <em>7º Imersão Dev</em>, da Alura.</p>
-          </div>
-          <img src="./img/projetos/alura/alura-720p.jpg" width="1280" height="720" alt="Tabela de classificação de jogadores">
-          <a class="botao" href="https://vitorsofiati.github.io/imersao-alura" target="_blank">Acesse o Site</a>
-          <div class="portfolio-tecnologias">
-            <h4>Tecnologias usadas:</h4>
-            <span>JavaScript</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="arrow-nav">
-      <button  class="prev"></button>
-      <button class="next"></button>
-    </div>
-  </section>
-
-  <footer class="footer-bg">
-    <div class="footer container" id="contato">
-
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank" aria-label="Perfil do Linkedin">
-            <svg class="footer-icone" width="40px" height="40px" viewBox="1 1 13 13" xmlns="http://www.w3.org/2000/svg" fill="none" style="display: block;">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path style="display: block;" fill="var(--cor-secundaria)" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path>
+      <div class="header container">
+        <a href="#inicio">
+          <svg
+            class="logotipo"
+            width="75px"
+            height="50px"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="170 30 158 95"
+            style="background: rgba(0, 0, 0, 0)"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <linearGradient
+                id="editing-sticker-gradient"
+                x1="0.5"
+                y1="0.2"
+                x2="0.5"
+                y2="0.8"
+              >
+                <stop offset="0" stop-color="#fafafa"></stop>
+                <stop offset="1" stop-color="#8758ff"></stop>
+              </linearGradient>
+              <filter
+                id="editing-sticker"
+                x="-100%"
+                y="-100%"
+                width="300%"
+                height="300%"
+              >
+                <feMorphology
+                  operator="erode"
+                  radius="1"
+                  in="SourceAlpha"
+                  result="alpha-erode"
+                ></feMorphology>
+                <feConvolveMatrix
+                  order="3,3"
+                  divisor="1"
+                  kernelMatrix="0 1 0 1 1 1 0 1 0"
+                  in="alpha-erode"
+                  result="alpha-round"
+                ></feConvolveMatrix>
+                <feMorphology
+                  operator="dilate"
+                  radius="3.5"
+                  in="alpha-round"
+                  result="dilate-shadow"
+                ></feMorphology>
+                <feGaussianBlur
+                  in="dilate-shadow"
+                  stdDeviation="1.5"
+                  result="shadow"
+                ></feGaussianBlur>
+                <feFlood flood-color="#000" result="flood-sticker"></feFlood>
+                <feComposite
+                  operator="in"
+                  in="flood-sticker"
+                  in2="alpha-round"
+                  result="comp-sticker"
+                ></feComposite>
+                <feMorphology
+                  operator="dilate"
+                  radius="3"
+                  in="comp-sticker"
+                  result="morph-sticker"
+                ></feMorphology>
+                <feConvolveMatrix
+                  order="3,3"
+                  divisor="1"
+                  kernelMatrix="0 1 0 1 1 1 0 1 0"
+                  in="morph-sticker"
+                  result="sticker"
+                ></feConvolveMatrix>
+                <feMerge>
+                  <feMergeNode in="shadow"></feMergeNode>
+                  <feMergeNode in="sticker"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#editing-sticker)">
+              <g transform="translate(177.61501717567444, 114.30000114440918)">
+                <path
+                  d="M52.64-2.46L52.64-2.46L52.64-2.46Q50.92-0.98 47.29 0.12L47.29 0.12L47.29 0.12Q43.66 1.23 39.36 1.23L39.36 1.23L39.36 1.23Q34.19 1.23 30.50-0.31L30.50-0.31L30.50-0.31Q26.81-1.84 25.46-4.55L25.46-4.55L25.46-4.55Q24.11-7.38 22.14-11.87L22.14-11.87L22.14-11.87Q20.17-16.36 18.02-21.89L18.02-21.89L18.02-21.89Q15.87-27.43 13.59-33.64L13.59-33.64L13.59-33.64Q11.32-39.85 9.22-46.25L9.22-46.25L9.22-46.25Q7.13-52.64 5.29-58.79L5.29-58.79L5.29-58.79Q3.44-64.94 2.09-70.36L2.09-70.36L2.09-70.36Q3.81-72.08 7.07-73.49L7.07-73.49L7.07-73.49Q10.33-74.91 14.02-74.91L14.02-74.91L14.02-74.91Q18.57-74.91 21.46-73.00L21.46-73.00L21.46-73.00Q24.35-71.09 25.71-65.93L25.71-65.93L25.71-65.93Q29.03-53.87 32.41-42.87L32.41-42.87L32.41-42.87Q35.79-31.86 39.48-19.93L39.48-19.93L40.22-19.93L40.22-19.93Q43.54-31.49 47.05-45.14L47.05-45.14L47.05-45.14Q50.55-58.79 53.75-72.32L53.75-72.32L53.75-72.32Q55.96-73.43 58.49-74.17L58.49-74.17L58.49-74.17Q61.01-74.91 64.21-74.91L64.21-74.91L64.21-74.91Q68.76-74.91 71.95-72.88L71.95-72.88L71.95-72.88Q75.15-70.85 75.15-66.17L75.15-66.17L75.15-66.17Q75.15-63.47 73.86-58.30L73.86-58.30L73.86-58.30Q72.57-53.14 70.54-46.68L70.54-46.68L70.54-46.68Q68.51-40.22 65.99-33.21L65.99-33.21L65.99-33.21Q63.47-26.20 60.95-19.99L60.95-19.99L60.95-19.99Q58.42-13.78 56.21-9.04L56.21-9.04L56.21-9.04Q54.00-4.30 52.64-2.46ZM112.91-27.92L107.75-29.64L107.75-29.64Q102.34-31.49 97.91-33.39L97.91-33.39L97.91-33.39Q93.48-35.30 90.28-38.01L90.28-38.01L90.28-38.01Q87.08-40.71 85.30-44.46L85.30-44.46L85.30-44.46Q83.52-48.22 83.52-53.63L83.52-53.63L83.52-53.63Q83.52-64.08 91.57-70.36L91.57-70.36L91.57-70.36Q99.63-76.63 114.14-76.63L114.14-76.63L114.14-76.63Q119.43-76.63 123.98-75.89L123.98-75.89L123.98-75.89Q128.53-75.15 131.79-73.62L131.79-73.62L131.79-73.62Q135.05-72.08 136.90-69.68L136.90-69.68L136.90-69.68Q138.74-67.28 138.74-64.08L138.74-64.08L138.74-64.08Q138.74-60.88 137.27-58.61L137.27-58.61L137.27-58.61Q135.79-56.33 133.70-54.73L133.70-54.73L133.70-54.73Q131.00-56.46 126.44-57.75L126.44-57.75L126.44-57.75Q121.89-59.04 116.48-59.04L116.48-59.04L116.48-59.04Q110.95-59.04 108.36-57.50L108.36-57.50L108.36-57.50Q105.78-55.96 105.78-53.63L105.78-53.63L105.78-53.63Q105.78-51.78 107.38-50.61L107.38-50.61L107.38-50.61Q108.98-49.45 112.18-48.46L112.18-48.46L118.69-46.37L118.69-46.37Q130.26-42.68 136.47-36.96L136.47-36.96L136.47-36.96Q142.68-31.24 142.68-21.40L142.68-21.40L142.68-21.40Q142.68-10.95 134.44-4.49L134.44-4.49L134.44-4.49Q126.20 1.97 110.21 1.97L110.21 1.97L110.21 1.97Q104.55 1.97 99.69 1.05L99.69 1.05L99.69 1.05Q94.83 0.12 91.20-1.66L91.20-1.66L91.20-1.66Q87.58-3.44 85.55-6.09L85.55-6.09L85.55-6.09Q83.52-8.73 83.52-12.18L83.52-12.18L83.52-12.18Q83.52-15.74 85.61-18.27L85.61-18.27L85.61-18.27Q87.70-20.79 90.16-22.14L90.16-22.14L90.16-22.14Q93.60-19.43 98.58-17.47L98.58-17.47L98.58-17.47Q103.57-15.50 109.47-15.50L109.47-15.50L109.47-15.50Q115.50-15.50 117.96-17.34L117.96-17.34L117.96-17.34Q120.42-19.19 120.42-21.65L120.42-21.65L120.42-21.65Q120.42-24.11 118.45-25.40L118.45-25.40L118.45-25.40Q116.48-26.69 112.91-27.92L112.91-27.92Z"
+                  fill="url(#editing-sticker-gradient)"
+                  stroke="#eee"
+                  stroke-width="2"
+                ></path>
               </g>
-            </svg>
+            </g>
+            <style>
+              text {
+                font-size: 64px;
+                font-family: Arial Black;
+                text-anchor: middle;
+              }
+            </style>
+          </svg>
+        </a>
+        <nav aria-label="principal">
+          <ul>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
+    <div class="introducao-bg">
+      <main class="introducao container">
+        <div class="foto-perfil">
+          <img
+            src="../img/foto-perfil.jpg"
+            width="758"
+            height="769"
+            alt="Definitivamente sou eu"
+          />
+        </div>
 
-          </a>
-        </li>
+        <div class="apresentacao">
+          <h1 class="fonte-titulo">Vitor Sofiati</h1>
+          <p>
+            Estudante de desenvolvimento web com habilidades em
+            <em
+              ><abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr></em
+            >, <em><abbr title="Folhas de Estilo em Cascata">CSS</abbr></em> e
+            <em>JavaScript.</em>
+          </p>
+        </div>
+      </main>
+    </div>
 
-        <li>
-          <a href="https://github.com/vitorsofiati" target="_blank" aria-label="Perfil do Github">
-            <svg class="footer-icone" width="40px" height="40px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" style="display: block;">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="var(--cor-secundaria)">
-                  <g id="icons" transform="translate(56.000000, 160.000000)">
-                    <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path>
+    <div class="sobre-bg">
+      <article class="sobre container" id="sobre">
+        Muito prazer, sou o Vitor!<em> Técnico em eletrônica</em> e estudante de
+        <em>Análise e Desenvolvimento de Sistemas</em>. Em processo de transição
+        de carreira, estudo desenvolvimento web através da faculdade, cursos e
+        projetos pessoais. Aqui neste site você encontra minhas informações e
+        projetos mais relevantes, mas caso prefira, fique à vontade para acessar
+        meu perfil no
+        <a href="https://www.linkedin.com/in/vitorsofiati/" target="_blank"
+          ><em>Linkedin</em></a
+        >.
+      </article>
+    </div>
+
+    <section class="formacao-bg" id="formacao">
+      <h2
+        data-anime="400"
+        class="formacao-subtitulo fonte-titulo fadeInDown js-anima"
+      >
+        FORMA<span class="cedilha">Ç</span>ÃO
+      </h2>
+      <div class="formacao container">
+        <div class="formacao-info">
+          <p>
+            Aqui se encontram minhas principais graduações, cursos e
+            certificados.
+          </p>
+
+          <ul class="graduacao-lista fonte-card">
+            <li class="graduacao">
+              <span>Tecnólogo</span>
+              <h3>Análise e Desenvolvimento de Sistemas</h3>
+              <span>Universidade Estácio de Sá</span>
+            </li>
+            <li class="graduacao">
+              <span>Técnico</span>
+              <h3>Curso Técnico em Eletrônica</h3>
+              <span>Escola Técnica Estadual Parobé</span>
+            </li>
+          </ul>
+
+          <div class="formacao-extra">
+            <h3>Certificações complementares</h3>
+
+            <ul class="cursos-lista fonte-lista">
+              <li>
+                JavaScript Completo ES6 | Origamid
+                <span>74h</span>
+                <a
+                  href="https://origamid.com/certificate/91ba04fc"
+                  target="_blank"
+                  aria-label="Certificado do curso"
+                ></a>
+              </li>
+
+              <li>
+                TypeScript para Iniciantes | Origamid<span>22h</span>
+                <a
+                  href="https://origamid.com/certificate/23eba72c"
+                  target="_blank"
+                  aria-label="Certificado do curso"
+                ></a>
+              </li>
+
+              <li>
+                Bootstrap 4 | Origamid
+                <span>10h</span>
+                <a
+                  href="https://origamid.com/certificate/a3a7bc70"
+                  target="_blank"
+                  aria-label="Certificado do curso"
+                ></a>
+              </li>
+
+              <li>
+                HTML e CSS para Iniciantes | Origamid
+                <span>46h</span>
+                <a
+                  href="https://www.origamid.com/certificate/f8e086ce"
+                  target="_blank"
+                  aria-label="Certificado do curso"
+                ></a>
+              </li>
+
+              <li>
+                7º Imersão Dev | Alura
+                <span>04h</span>
+                <a
+                  href="https://cursos.alura.com.br/immersion/certificate/7d3fda45-eeb9-45ec-ae0e-fce3ff3a59b9"
+                  target="_blank"
+                  aria-label="Certificado do curso"
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="formacao-idiomas">
+            <h3>IDIOMAS</h3>
+            <ul class="idiomas-lista fonte-lista">
+              <li>Inglês<span> / avançado</span></li>
+              <li>Espanhol<span> / iniciante</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos-bg" id="projetos">
+      <h2
+        data-anime="400"
+        class="projetos-subtitulo fonte-titulo fadeInLeft js-anima"
+      >
+        PROJETOS
+      </h2>
+      <div class="projetos container">
+        <p class="projetos-intro">
+          Além de ajudar na fixação do conteúdo que estou aprendendo, realizar
+          projetos é uma forma de adquirir experiência e me preparar melhor para
+          o mercado. Aqui você encontra os projetos mais relevantes, porém é
+          possível visualizar o portfólio completo nos meus repositórios do
+          <a
+            href="https://github.com/vitorsofiati?tab=repositories"
+            target="_blank"
+            ><em>Github</em></a
+          >.
+        </p>
+      </div>
+
+      <div class="projetos-wrapper">
+        <ul class="projetos-slide">
+          <li class="portfolio">
+            <h3 class="fonte-card">Bikcraft</h3>
+            <p class="portfolio-texto fonte-lista">
+              Site para a venda de bicicletas. Projeto final do curso
+              <em>HTML e CSS para iniciantes</em>, da plataforma Origamid.
+            </p>
+            <img
+              src="./img/projetos/bikcraft/bikcraft-720p.jpg"
+              width="1280"
+              height="720"
+              alt="Site de venda de bicicletas"
+            />
+            <a
+              class="botao"
+              href="https://vitorsofiati.github.io/bikcraft"
+              target="_blank"
+              >Acesse o Site</a
+            >
+            <div class="portfolio-tecnologias">
+              <h4>Tecnologias usadas:</h4>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </li>
+
+          <li class="portfolio">
+            <h3 class="fonte-card">Animais Fantásticos</h3>
+            <p class="portfolio-texto fonte-lista">
+              Criação de um site sobre animais fantásticos. Projeto final do
+              curso <em>JavaScript ES6 Completo</em>, da plataforma Origamid.
+            </p>
+            <img
+              src="./img/projetos/animais-fantasticos/animais-fantasticos-720p.jpg"
+              width="1280"
+              height="720"
+              alt="Site sobre animais fantásticos"
+            />
+            <a
+              class="botao"
+              href="https://vitorsofiati.github.io/animais-fantasticos"
+              target="_blank"
+              >Acesse o Site</a
+            >
+            <div class="portfolio-tecnologias">
+              <h4>Tecnologias usadas:</h4>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </li>
+
+          <li class="portfolio">
+            <h3 class="fonte-card">Tabela de Classificação</h3>
+            <div class="portfolio-texto">
+              <p class="portfolio-texto fonte-lista">
+                Tabela de classificação com inserção de jogadores utilizando
+                <abbr title="JavaScript">JS</abbr>. Projeto final da
+                <em>7º Imersão Dev</em>, da Alura.
+              </p>
+            </div>
+            <img
+              src="./img/projetos/alura/alura-720p.jpg"
+              width="1280"
+              height="720"
+              alt="Tabela de classificação de jogadores"
+            />
+            <a
+              class="botao"
+              href="https://vitorsofiati.github.io/imersao-alura"
+              target="_blank"
+              >Acesse o Site</a
+            >
+            <div class="portfolio-tecnologias">
+              <h4>Tecnologias usadas:</h4>
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="arrow-nav">
+        <button class="prev"></button>
+        <button class="next"></button>
+      </div>
+    </section>
+
+    <footer class="footer-bg">
+      <div class="footer container" id="contato">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vitorsofiati/"
+              target="_blank"
+              aria-label="Perfil do Linkedin"
+            >
+              <svg
+                class="footer-icone"
+                width="40px"
+                height="40px"
+                viewBox="1 1 13 13"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                style="display: block"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    style="display: block"
+                    fill="var(--cor-secundaria)"
+                    d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/vitorsofiati"
+              target="_blank"
+              aria-label="Perfil do Github"
+            >
+              <svg
+                class="footer-icone"
+                width="40px"
+                height="40px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+                style="display: block"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-140.000000, -7559.000000)"
+                    fill="var(--cor-secundaria)"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                        id="github-[#142]"
+                      ></path>
+                    </g>
                   </g>
                 </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="email" href="mailto:vitorsofiati@oulook.com">
+          <svg
+            class="footer-icone"
+            width="40px"
+            height="40px"
+            viewBox="0 -4.8 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            fill="#000000"
+          >
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g
+                id="Icon-Set-Filled"
+                sketch:type="MSLayerGroup"
+                transform="translate(-414.000000, -261.000000)"
+                fill="var(--cor-secundaria)"
+              >
+                <path
+                  d="M430,275.916 L426.684,273.167 L415.115,285.01 L444.591,285.01 L433.235,273.147 L430,275.916 L430,275.916 Z M434.89,271.89 L445.892,283.329 C445.955,283.107 446,282.877 446,282.634 L446,262.862 L434.89,271.89 L434.89,271.89 Z M414,262.816 L414,282.634 C414,282.877 414.045,283.107 414.108,283.329 L425.147,271.927 L414,262.816 L414,262.816 Z M445,261 L415,261 L430,273.019 L445,261 L445,261 Z"
+                  id="mail"
+                  sketch:type="MSShapeGroup"
+                ></path>
               </g>
-            </svg>
-
-          </a>
-        </li>
-
-
-      </ul>
-
-      <a class="email" href="mailto:vitorsofiati@oulook.com">
-        <svg class="footer-icone" width="40px" height="40px" viewBox="0 -4.8 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-            <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-414.000000, -261.000000)" fill="var(--cor-secundaria)">
-              <path d="M430,275.916 L426.684,273.167 L415.115,285.01 L444.591,285.01 L433.235,273.147 L430,275.916 L430,275.916 Z M434.89,271.89 L445.892,283.329 C445.955,283.107 446,282.877 446,282.634 L446,262.862 L434.89,271.89 L434.89,271.89 Z M414,262.816 L414,282.634 C414,282.877 414.045,283.107 414.108,283.329 L425.147,271.927 L414,262.816 L414,262.816 Z M445,261 L415,261 L430,273.019 L445,261 L445,261 Z" id="mail" sketch:type="MSShapeGroup"> </path>
             </g>
-          </g>
-        </svg>
-        <span>vitorsofiati@oulook.com</span>
-      </a>
-    </div>
-  </footer>
+          </svg>
+          <span>vitorsofiati@oulook.com</span>
+        </a>
+      </div>
+    </footer>
 
-  <script src="./js/plugins/simple-anime.js"></script>
-  <script src="./js/dist/main.js"></script>
-</body>
-
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/dist/main.js"></script>
+  </body>
 </html>

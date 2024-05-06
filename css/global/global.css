@@ -55,7 +55,7 @@ abbr {
   background-color: var(--cor-d1);
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .container {
     padding: 10px 20px;
   }

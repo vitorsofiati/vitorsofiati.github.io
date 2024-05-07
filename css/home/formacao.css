@@ -139,7 +139,8 @@
   position: relative;
 }
 
-.cursos-lista li + li {
+.cursos-lista li + li,
+.idiomas-lista li + li {
   border-top: 1px solid rgba(135, 88, 255, 0.2);
 }
 

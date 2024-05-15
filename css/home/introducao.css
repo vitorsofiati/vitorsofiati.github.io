@@ -56,8 +56,7 @@
   color: #074969;
 }
 
-@media(max-width:800px) {
-
+@media (max-width: 800px) {
   .introducao {
     gap: 0;
     grid-template-columns: 1fr 1fr;
@@ -79,10 +78,9 @@
   .apresentacao p {
     font-size: 1.5rem;
   }
-
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
   .introducao-bg {
     margin-bottom: 80px;
     padding-top: 80px;
@@ -121,8 +119,7 @@
   }
 }
 
-@media(max-width:400px) {
-
+@media (max-width: 400px) {
   .apresentacao p {
     font-size: 1.6rem;
   }
